@@ -1,0 +1,1045 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+html,
+body {
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+$color1: #914BFF;
+$color2: #A3AED0;
+$color3: #1B2559;
+.all {
+    display: flex;
+    flex-direction: row;
+}
+
+//Sidebar Two
+.sidebar_two {
+    display: none;
+    width: 350px;
+    height: 100%;
+    padding: 45px 0 0 0;
+    position: sticky;
+    left: 0;
+    top: 0;
+    .sidebar__header_two {
+        display: flex;
+        margin-bottom: 23px;
+        margin-left: 37px;
+        .sidebar__caption_two {
+            margin-left: 11px;
+            display: flex;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            a {
+                display: flex;
+                flex-direction: column;
+                color: $color1;
+            }
+            font-weight: bold;
+            font-size: 25.2778px;
+            line-height: 100%;
+            color: $color1;
+            text-transform: uppercase;
+            max-width: 160px;
+            span {
+                font-weight: 500;
+                font-size: 11.6667px;
+                line-height: 100%;
+                color: $color1;
+                margin-left: 4px;
+            }
+        }
+        .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+    }
+    .sidebar__body_two {
+        margin-top: 23px;
+        margin-left: 37px;
+        margin-bottom: 300px;
+        .sidebar__nav_two {
+            ul {
+                display: flex;
+                flex-direction: column;
+                li {
+                    margin-bottom: 30px;
+                    width: 208px;
+                    cursor: pointer;
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        background: linear-gradient(135deg, #A586FF 0%, #7F1BFF 100%);
+                        border-radius: 9.72222px;
+                        padding: 10px 0 10px 10px;
+                        span {
+                            color: #fff;
+                        }
+                        path {
+                            fill: #fff;
+                        }
+                    }
+                    a {
+                        display: flex;
+                        align-items: center;
+                        path {
+                            fill: $color2;
+                        }
+                        span {
+                            font-weight: 500;
+                            font-size: 15.5556px;
+                            line-height: 27px;
+                            letter-spacing: -0.02em;
+                            color: $color2;
+                            margin-left: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sidebar__footer_two {
+        margin-left: 37px;
+        .sidebar__logout_two {
+            position: absolute;
+            bottom: 0;
+            a {
+                display: flex;
+                align-items: center;
+            }
+            span {
+                font-weight: 500;
+                font-size: 15.5556px;
+                line-height: 27px;
+                letter-spacing: -0.02em;
+                color: $color2;
+                margin-left: 14px;
+            }
+        }
+    }
+}
+
+//Sidebar
+.sidebar {
+    width: 350px;
+    height: 100%;
+    padding: 45px 0 0 0;
+    position: sticky;
+    left: 0;
+    top: 0;
+    .sidebar__header {
+        display: flex;
+        margin-bottom: 23px;
+        margin-left: 37px;
+        .sidebar__caption {
+            margin-left: 11px;
+            display: flex;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            a {
+                display: flex;
+                flex-direction: column;
+                color: $color1;
+            }
+            font-weight: bold;
+            font-size: 25.2778px;
+            line-height: 100%;
+            color: $color1;
+            text-transform: uppercase;
+            max-width: 160px;
+            span {
+                font-weight: 500;
+                font-size: 11.6667px;
+                line-height: 100%;
+                color: $color1;
+                margin-left: 4px;
+            }
+        }
+    }
+    .sidebar__body {
+        margin-top: 23px;
+        margin-left: 37px;
+        margin-bottom: 300px;
+        .sidebar__nav {
+            ul {
+                display: flex;
+                flex-direction: column;
+                li {
+                    margin-bottom: 30px;
+                    width: 208px;
+                    cursor: pointer;
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        background: linear-gradient(135deg, #A586FF 0%, #7F1BFF 100%);
+                        border-radius: 9.72222px;
+                        padding: 10px 0 10px 10px;
+                        span {
+                            color: #fff;
+                        }
+                        path {
+                            fill: #fff;
+                        }
+                    }
+                    a {
+                        display: flex;
+                        align-items: center;
+                        path {
+                            fill: $color2;
+                        }
+                        span {
+                            font-weight: 500;
+                            font-size: 15.5556px;
+                            line-height: 27px;
+                            letter-spacing: -0.02em;
+                            color: $color2;
+                            margin-left: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sidebar__footer {
+        margin-left: 37px;
+        .sidebar__logout {
+            position: absolute;
+            bottom: 0;
+            a {
+                display: flex;
+                align-items: center;
+            }
+            span {
+                font-weight: 500;
+                font-size: 15.5556px;
+                line-height: 27px;
+                letter-spacing: -0.02em;
+                color: $color2;
+                margin-left: 14px;
+            }
+        }
+    }
+}
+
+.main {
+    background-color: #F4F7FE;
+    padding: 45px 28px 50px 30px;
+    width: 100%;
+    #openNav {
+        display: none;
+    }
+    .main__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 32px;
+        .main__welcome {
+            .welcome__caption {
+                display: flex;
+                flex-direction: column;
+                span {
+                    font-weight: bold;
+                    font-size: 13.6111px;
+                    line-height: 23px;
+                    letter-spacing: -0.02em;
+                    color: #707EAE;
+                }
+                max-width: 300px;
+                color: $color3;
+                font-weight: bold;
+                font-size: 33.0556px;
+                line-height: 41px;
+                letter-spacing: -0.02em;
+            }
+        }
+        .main__search {
+            form {
+                display: flex;
+                background-color: #fff;
+                align-items: center;
+                border-radius: 10px;
+                padding: 17px 5px 17px 20px;
+                width: 331px;
+                input {
+                    border: 0;
+                    outline: none;
+                    margin-left: 10px;
+                    font-size: 11.6667px;
+                    line-height: 19px;
+                    letter-spacing: -0.02em;
+                }
+            }
+        }
+    }
+    .main__all {
+        display: flex;
+        flex-direction: column;
+        .main__statistic {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            .statistic__item {
+                display: flex;
+                background-color: #fff;
+                border-radius: 20px;
+                align-items: center;
+                width: 250px;
+                height: 94px;
+                padding: 0 20px 0 20px;
+                .item__img_one {
+                    margin-left: 23px;
+                }
+                .item__text_one {
+                    margin-left: 18px;
+                }
+                .item__text_two {
+                    margin-left: 18px;
+                }
+                .item__img_two {
+                    margin-left: 65px;
+                }
+                .item__text {
+                    .item__cash {
+                        font-weight: 500;
+                        font-size: 13.6111px;
+                        line-height: 23px;
+                        letter-spacing: -0.02em;
+                        color: $color2;
+                        max-width: 120px;
+                    }
+                    .item__label {
+                        font-weight: bold;
+                        font-size: 23.3333px;
+                        line-height: 31px;
+                        letter-spacing: -0.02em;
+                        color: $color3;
+                        max-width: 120px;
+                    }
+                    .other__cash {
+                        font-size: 15.5556px;
+                        line-height: 27px;
+                        letter-spacing: -0.02em;
+                        max-width: 120px;
+                    }
+                    .other__cash_two {
+                        color: #fff;
+                    }
+                    .other__label {
+                        font-weight: bold;
+                        font-size: 17.5px;
+                        line-height: 29px;
+                        letter-spacing: -0.02em;
+                        color: $color3;
+                    }
+                    .other__label_two {
+                        font-size: 17.5px;
+                        line-height: 29px;
+                        letter-spacing: -0.02em;
+                        font-weight: bold;
+                        color: #fff;
+                    }
+                }
+            }
+            .activity {
+                background: linear-gradient(135deg, #A586FF 0%, #7F1BFF 100%);
+                border-radius: 10px;
+            }
+        }
+        .main__promo {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            .promo__reach {
+                display: flex;
+                background-color: #fff;
+                border-radius: 20px;
+                height: 335px;
+                width: 730px;
+                align-items: center;
+                .reach__left {
+                    margin-left: 43px;
+                    .reach__caption {
+                        max-width: 250px;
+                        color: $color3;
+                        font-weight: bold;
+                        font-size: 33.0556px;
+                        line-height: 41px;
+                        letter-spacing: -0.02em;
+                        margin-bottom: 17px;
+                    }
+                    .reach__text {
+                        max-width: 250px;
+                        color: $color2;
+                        font-weight: 500;
+                        font-size: 15.5556px;
+                        line-height: 27px;
+                        letter-spacing: -0.02em;
+                        margin-bottom: 30px;
+                    }
+                    .reach__button {
+                        input {
+                            border: 0;
+                            outline: none;
+                            color: #fff;
+                            font-weight: 500;
+                            font-size: 13.6111px;
+                            line-height: 23px;
+                            text-align: center;
+                            letter-spacing: -0.02em;
+                            background: linear-gradient(135deg, #A586FF 0%, #7F1BFF 100%);
+                            border-radius: 9.72222px;
+                            padding: 10px 45px;
+                        }
+                    }
+                }
+            }
+            .promo__cards {
+                display: flex;
+                flex-direction: column;
+                border-radius: 20px;
+                height: 335px;
+                width: 550px;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                text-align: center;
+                .cards__logo {
+                    margin-bottom: 17px;
+                }
+                .cards__text {
+                    .cards__caption {
+                        max-width: 235px;
+                        color: $color3;
+                        font-weight: bold;
+                        font-size: 23.3333px;
+                        line-height: 31px;
+                        letter-spacing: -0.02em;
+                        margin-bottom: 7px;
+                    }
+                    .cards__desc {
+                        max-width: 230px;
+                        color: $color2;
+                        font-weight: 500;
+                        font-size: 13.6111px;
+                        line-height: 23px;
+                        letter-spacing: -0.02em;
+                        margin-bottom: 20px;
+                    }
+                }
+                .cards__button {
+                    input {
+                        border: 0;
+                        outline: none;
+                        color: #fff;
+                        font-weight: 500;
+                        font-size: 13.6111px;
+                        line-height: 23px;
+                        text-align: center;
+                        letter-spacing: -0.02em;
+                        background: linear-gradient(135deg, #A586FF 0%, #7F1BFF 100%);
+                        border-radius: 9.72222px;
+                        width: 283px;
+                        height: 45px;
+                    }
+                }
+            }
+        }
+        .main__account {
+            display: flex;
+            justify-content: space-between;
+            .account__earnings {
+                background-color: #fff;
+                border-radius: 20px;
+                padding-top: 22px;
+                .earnings__header {
+                    display: flex;
+                    justify-content: flex-end;
+                    padding-right: 22px;
+                }
+                .earnings__body {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .earnings__text {
+                        max-width: 200px;
+                        color: $color2;
+                        font-weight: 500;
+                        font-size: 13.6111px;
+                        line-height: 23px;
+                        text-align: center;
+                        letter-spacing: -0.02em;
+                        margin-bottom: 3px;
+                        margin-bottom: 16px;
+                        span {
+                            max-width: 100px;
+                            color: $color3;
+                            font-weight: bold;
+                            font-size: 33.0556px;
+                            line-height: 41px;
+                            text-align: center;
+                            letter-spacing: -0.02em;
+                        }
+                    }
+                    .earnings__cent {
+                        color: #05CD99;
+                        background: rgba(5, 205, 153, 0.1);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-weight: bold;
+                        font-size: 11.6667px;
+                        line-height: 19px;
+                        letter-spacing: -0.02em;
+                        padding: 5px 8px;
+                        width: 56px;
+                        border-radius: 56px;
+                        margin-bottom: 46px;
+                    }
+                }
+                .earnings__footer {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .account__transfers {
+                display: flex;
+                flex-direction: column;
+                padding: 18px 24px 21px 27px;
+                background-color: #fff;
+                border-radius: 20px;
+                width: 450px;
+                .transfers__caption {
+                    max-width: 200px;
+                    color: $color3;
+                    font-weight: bold;
+                    font-size: 19.4444px;
+                    line-height: 31px;
+                    letter-spacing: -0.02em;
+                    margin-bottom: 22px;
+                }
+                .transfers__body {
+                    display: flex;
+                    flex-direction: column;
+                    .body__item {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 15px;
+                        &:last-child {
+                            margin-bottom: 60px;
+                        }
+                        .item__left {
+                            display: flex;
+                            align-items: center;
+                            .item__text {
+                                margin-left: 14px;
+                                .item__caption {
+                                    max-width: 120px;
+                                    color: $color3;
+                                    font-weight: bold;
+                                    font-size: 13.6111px;
+                                    line-height: 23px;
+                                    letter-spacing: -0.02em;
+                                }
+                                .item__desc {
+                                    color: $color2;
+                                    font-weight: 500;
+                                    font-size: 11.6667px;
+                                    line-height: 19px;
+                                    letter-spacing: -0.02em;
+                                }
+                            }
+                        }
+                        .item__right {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: #05CD99;
+                            background: rgba(5, 205, 153, 0.1);
+                            font-weight: bold;
+                            font-size: 13.6111px;
+                            line-height: 23px;
+                            letter-spacing: -0.02em;
+                            padding: 7px 7px;
+                            border-radius: 7px;
+                            width: 50px;
+                            height: 24px;
+                        }
+                        .item__right_two {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: #EE5D50;
+                            background: rgba(238, 93, 80, 0.1);
+                            font-weight: bold;
+                            font-size: 13.6111px;
+                            line-height: 23px;
+                            letter-spacing: -0.02em;
+                            padding: 7px 7px;
+                            border-radius: 7px;
+                            width: 50px;
+                            height: 24px;
+                        }
+                    }
+                }
+                .transfers__footer {
+                    display: flex;
+                    justify-content: flex-end;
+                    a {
+                        display: flex;
+                        font-weight: bold;
+                        font-size: 15.5556px;
+                        line-height: 27px;
+                        letter-spacing: -0.02em;
+                        color: #4318FF;
+                        img {
+                            margin-left: 6px;
+                        }
+                    }
+                }
+            }
+            .account__avatar {
+                background-color: #fff;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                width: 450px;
+                .avatar__header {
+                    padding-top: 28px;
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 13px;
+                }
+                .avatar__body {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .body__caption {
+                        font-weight: bold;
+                        font-size: 23.3333px;
+                        line-height: 31px;
+                        letter-spacing: -0.02em;
+                        max-width: 200px;
+                    }
+                    .body__span {
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 30px;
+                        align-items: center;
+                        img {
+                            height: 14px;
+                        }
+                        span {
+                            margin-left: 7px;
+                            max-width: 200px;
+                            color: $color2;
+                            font-weight: 500;
+                            font-size: 13.6111px;
+                            line-height: 23px;
+                            letter-spacing: -0.02em;
+                        }
+                    }
+                }
+                .avatar__footer {
+                    display: flex;
+                    justify-content: center;
+                    .footer__item {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        max-width: 50px;
+                        color: $color2;
+                        font-size: 11.6667px;
+                        line-height: 19px;
+                        letter-spacing: -0.02em;
+                        margin: 0 20px 0 20px;
+                        span {
+                            font-weight: bold;
+                            font-size: 23.3333px;
+                            line-height: 31px;
+                            letter-spacing: -0.02em;
+                            color: $color3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    .main {
+        padding: 35px 20px 30px 30px;
+        .main__header {
+            justify-content: space-between;
+            .main__welcome {
+                margin-bottom: 15px;
+            }
+        }
+        .main__all {
+            .main__statistic {
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-around;
+                .statistic__item {
+                    margin-bottom: 20px;
+                    width: 250px;
+                    justify-content: center;
+                }
+            }
+            .main__promo {
+                flex-direction: column;
+                align-items: center;
+                .promo__reach {
+                    height: auto;
+                    width: 850px;
+                    justify-content: center;
+                    padding-top: 20px;
+                    margin-bottom: 20px;
+                    .reach__left {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        margin-left: 0;
+                        margin-bottom: 20px;
+                    }
+                }
+                .promo__cards {
+                    width: 850px;
+                }
+            }
+            .main__account {
+                flex-wrap: wrap;
+                justify-content: space-around;
+                .account__earnings {
+                    margin-bottom: 20px;
+                    width: 450px;
+                }
+                .account__transfers {
+                    width: 450px;
+                    margin-bottom: 20px;
+                }
+                .account__avatar {
+                    width: 100%;
+                    padding-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .main {
+        padding: 35px 20px 30px 30px;
+        .main__header {
+            justify-content: space-around;
+            .main__welcome {
+                margin-bottom: 15px;
+            }
+        }
+        .main__all {
+            .main__statistic {
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-around;
+                .statistic__item {
+                    margin-bottom: 20px;
+                    width: 40%;
+                    justify-content: center;
+                }
+            }
+            .main__promo {
+                flex-direction: column;
+                align-items: center;
+                .promo__reach {
+                    height: auto;
+                    width: 730px;
+                    justify-content: center;
+                    padding-top: 20px;
+                    margin-bottom: 20px;
+                    .reach__left {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        margin-left: 0;
+                        margin-bottom: 20px;
+                    }
+                }
+                .promo__cards {
+                    width: 730px;
+                }
+            }
+            .main__account {
+                flex-wrap: wrap;
+                justify-content: space-around;
+                .account__earnings {
+                    margin-bottom: 20px;
+                    width: auto;
+                }
+                .account__transfers {
+                    width: 350px;
+                    margin-bottom: 20px;
+                }
+                .account__avatar {
+                    width: 100%;
+                    padding-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .main {
+        padding: 35px 20px 30px 30px;
+        .main__header {
+            flex-direction: column;
+            .main__welcome {
+                margin-bottom: 15px;
+                .welcome__caption {
+                    span {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .main__all {
+            .main__statistic {
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-around;
+                .statistic__item {
+                    margin-bottom: 20px;
+                    width: 40%;
+                    justify-content: center;
+                }
+            }
+            .main__promo {
+                flex-direction: column;
+                .promo__reach {
+                    height: auto;
+                    width: 100%;
+                    justify-content: center;
+                    padding-top: 20px;
+                    margin-bottom: 20px;
+                    .reach__left {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        margin-left: 0;
+                        margin-bottom: 20px;
+                    }
+                }
+                .promo__cards {
+                    width: 100%;
+                }
+            }
+            .main__account {
+                flex-wrap: wrap;
+                justify-content: space-around;
+                .account__earnings {
+                    margin-bottom: 20px;
+                }
+                .account__transfers {
+                    width: 350px;
+                    margin-bottom: 20px;
+                }
+                .account__avatar {
+                    width: 100%;
+                    padding-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .sidebar {
+        display: none;
+    }
+    .sidebar_two {
+        padding: 0 15px 0 0;
+        #closebtn {
+            float: right;
+            margin-top: 15px;
+            font-size: 18px;
+        }
+        .sidebar__header_two {
+            margin-top: 45px;
+        }
+        .sidebar__body_two {
+            margin-bottom: 60px;
+        }
+    }
+    .main {
+        padding: 35px 20px 30px 30px;
+        #openNav {
+            cursor: pointer;
+            display: block;
+            width: 35px;
+        }
+        .main__header {
+            flex-direction: column;
+            .main__welcome {
+                margin-bottom: 15px;
+                .welcome__caption {
+                    span {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .main__all {
+            .main__statistic {
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-around;
+                .statistic__item {
+                    margin-bottom: 20px;
+                    width: 40%;
+                    justify-content: center;
+                }
+            }
+            .main__promo {
+                flex-direction: column;
+                .promo__reach {
+                    height: auto;
+                    width: 100%;
+                    justify-content: center;
+                    padding-top: 20px;
+                    margin-bottom: 20px;
+                    .reach__left {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        margin-left: 0;
+                        margin-bottom: 20px;
+                    }
+                }
+                .promo__cards {
+                    width: 100%;
+                }
+            }
+            .main__account {
+                flex-wrap: wrap;
+                justify-content: space-around;
+                .account__earnings {
+                    margin-bottom: 20px;
+                }
+                .account__transfers {
+                    width: 350px;
+                    margin-bottom: 20px;
+                }
+                .account__avatar {
+                    width: 100%;
+                    padding-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sidebar {
+        display: none;
+    }
+    .sidebar_two {
+        padding: 0 15px 0 0;
+        #closebtn {
+            float: right;
+            margin-top: 15px;
+            font-size: 18px;
+        }
+        .sidebar__header_two {
+            margin-top: 45px;
+        }
+        .sidebar__body_two {
+            margin-bottom: 60px;
+        }
+    }
+    .main {
+        padding: 35px 20px 30px 30px;
+        #openNav {
+            cursor: pointer;
+            display: block;
+            width: 35px;
+        }
+        .main__header {
+            flex-direction: column;
+            .main__welcome {
+                margin-bottom: 15px;
+                .welcome__caption {
+                    span {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .main__all {
+            .main__statistic {
+                flex-direction: column;
+                align-items: center;
+                .statistic__item {
+                    margin-bottom: 20px;
+                    width: 250px;
+                }
+            }
+            .main__promo {
+                flex-direction: column;
+                .promo__reach {
+                    height: auto;
+                    width: 100%;
+                    flex-direction: column;
+                    padding-top: 20px;
+                    margin-bottom: 20px;
+                    .reach__left {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        margin-left: 0;
+                        margin-bottom: 20px;
+                    }
+                }
+                .promo__cards {
+                    width: 100%;
+                }
+            }
+            .main__account {
+                flex-direction: column;
+                .account__earnings {
+                    width: 290px;
+                    margin: 0 auto 20px;
+                }
+                .account__transfers {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                .account__avatar {
+                    width: 100%;
+                    padding-bottom: 15px;
+                }
+            }
+        }
+    }
+}
